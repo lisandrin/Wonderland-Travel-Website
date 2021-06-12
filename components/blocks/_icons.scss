@@ -1,0 +1,133 @@
+.find-resort{
+    width: 100%;
+    display: flex;
+    height: auto;
+
+    .resort-icon-content{
+        width: 100%;
+        display: block;
+        height: auto;
+
+        .travel-icons{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            text-align: center;
+
+            @media (max-width: 1221px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            @media (max-width: 568px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .card{
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                background-color: transparent;
+                padding: 10px 0px 10px 0px; 
+                text-align: center;
+            
+
+                img{
+                    width: 80px;
+                    height: 70px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                h4{
+                    font-size: 23px;
+                    color: #333;
+                    font-weight: 800;
+                    letter-spacing: -1px;
+                    text-transform: uppercase;
+                } 
+            }
+        }
+
+        .resort-content{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 62% 30%;
+            padding-top: 8%; 
+            gap: 20px;
+            padding-bottom: 2em;
+
+            @media (max-width: 839px) {
+                grid-template-columns: 1fr;
+            }
+
+            .cards{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+
+                @media (max-width: 629px) {
+                    grid-template-columns: 1fr;
+                }
+
+                .card{
+                    width: 100%;
+                    height: auto;
+                    background-color: none;
+                    display: inline-block;
+
+                    img{
+                        width: 100%;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        min-height: 300px;
+                    }
+
+                    @include spans;
+                    
+                    @include h3;
+                }
+            }
+
+            .text{
+                width: 100%;
+                display: inline-block;
+                min-height: 300px;
+                background-color: none;
+                padding: 10px;
+
+                @include spans;
+                h2{
+                    font-size: 42px;
+                    font-weight: 700;
+                    letter-spacing: -0.84px;
+                    line-height: 46.2px;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    font-size: 20px;
+                    color: gray;
+                    line-height: 21px;
+                    padding-top: 30px;
+                    padding-bottom: 15px;
+                }
+
+                @include social-icons;
+                li{
+                    font-size: 14px !important;
+                    i{
+                        color: grey !important;
+                    }
+                }
+                .share{
+                    font-size: 17px !important;
+                    padding-left: 10px;
+                    color: gray;
+                    font-weight: inherit;
+                }
+            }
+        }
+    }
+}

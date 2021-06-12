@@ -1,0 +1,71 @@
+.brands{
+    width: 100%;
+    display: flex;
+    height: 400px;
+    background-color: #fff; 
+    position: relative;
+    background-color: none;
+
+    @media (max-width:765px){
+        height: 600px;
+    }
+    
+    .bottom-header{
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        background-image: url(./imgs/bottom-header.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent; 
+        left: 0;
+        right: 0;
+        top: -17%;
+    }
+
+    .brands-content{
+        width: 100%;
+        display: flex;
+        height: 400px;
+
+        @media (max-width:473px){
+            height: 600px;
+        }
+
+        .brands-slide{
+            width: 100%;
+            display: grid;
+            margin-top: 100px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+            @media (max-width:765px){
+                margin-top: 5px;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            @media (max-width:473px){
+                margin-top: 5px;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .card{
+                width: 100%;
+                height: 200px;
+                background-color: none;
+                padding-top: 50px;
+
+                img{
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position:center;
+                    background-color: none;
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    &:hover{
+                        opacity: 0.2;
+                    }
+                }
+            }
+        }
+    }
+}

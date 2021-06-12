@@ -1,0 +1,158 @@
+@mixin head-text {
+    .head-text{
+        width: 100%;
+        min-height: 150px;
+        display: inline-block;
+        text-align: center;
+
+        p{
+            font-size: 18px;
+            color: gray;
+            font-style: italic;
+            font-family: serif;
+        }
+
+        h2{
+            font-size: 43px;
+            line-height: 1.12em; 
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: -1;
+
+            span{
+                color: #59815b;
+                background-color: #f2f1e7;;
+            }
+        }
+    }
+}
+
+@mixin h3 {
+    h3{
+        font-size: 29px;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        transition: .6s;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+@mixin p-text {
+    p{
+        margin-top: 9px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #878787; 
+    } 
+}
+
+@mixin spans {
+    span{
+        font-style: italic;
+        font-family: serif;
+        transition: 0.4s;
+
+        &:hover{
+            color: #59815b;
+            border-bottom: 1px solid #444;
+            transition: 0.5s;
+        }
+
+        i{
+            padding-right: 10px;
+        }
+    }
+}
+
+@mixin _tag {
+    a{
+        text-decoration: none;
+        background-color: #d7e9d8;
+        top: 5%;
+        left: -15px;
+        position: absolute;;
+        padding: 5px 30px 5px 20px;
+        color: #878787;
+        z-index: 50;
+        font-family: "Crimson Text",serif;
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 400;
+        transition: 0.4s;
+
+        &:hover{
+            color: #59815b;
+        }
+
+        i{
+            padding-right: 10px;
+        }
+    } 
+}
+
+@mixin social-icons {
+    ul{
+        display: flex;
+        padding:5px;
+
+        span{
+            font-style: italic;
+            font-weight: bold;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        li{
+            text-decoration: none;
+            list-style: none; 
+            padding-left: 10px;
+            cursor: pointer;
+           font-size: 12px;
+
+            i{
+                color:#fff;
+                transition: 0.5s; 
+              
+
+                &:hover{
+                    color: darkolivegreen;
+                }
+            }
+        }
+    }
+}
+
+@mixin input {
+    input{
+        width: 100px;
+        height: 30px;
+        background-color: transparent;
+        color: #fff; 
+        outline: none;
+        border: none;
+
+        &::placeholder{
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        &:focus{
+            border-left: 2px solid #e1e1e1;
+            color: #fff;
+        }
+    }
+}
+
+@mixin dark-btn {
+    
+}
+
+@mixin white-btn {
+    
+}

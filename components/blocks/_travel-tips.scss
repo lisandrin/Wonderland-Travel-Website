@@ -1,0 +1,153 @@
+.travel-tips{
+    width: 100%;
+    display: flex;
+    height:auto;
+        background-image: url(./imgs/tips-bgimg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    .tips-content{
+        width: 100%;
+        display: block;
+        height: auto;
+
+       
+
+        .head-text{
+            width: 100%;
+            min-height: 150px;
+            display: inline-block;
+            text-align: center;
+
+            p{
+                font-size: 18px;
+                color: gray;
+                font-style: italic;
+                font-family: serif;
+            }
+
+            h2{
+                font-size: 50px;
+                line-height: 1.12em; 
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: -1;
+
+                span{
+                    color: #59815b;
+                    background-color: #f2f1e7;;
+                }
+            }
+        }
+
+        .cards-content{
+            width: 100%;
+            display: inline-block;
+            background-color:transparent; 
+
+            .card{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+
+                @media (max-width: 901px) {
+                    grid-template-columns: 1fr;
+                }
+
+                .pic{
+                    width: 100%;
+                    height: auto;
+                    background-color: none;
+                    padding: 20px;
+                    position: relative;
+    
+                    a{
+                        text-decoration: none;
+                        background-color: #d7e9d8;
+                        top: 5%;
+                        left: 0;
+                        position: absolute;;
+                        padding: 5px 30px 5px 20px;
+                        color: #878787;
+                        z-index: 50;
+                        font-family: "Crimson Text",serif;
+                        font-style: italic;
+                        font-size: 18px;
+                        font-weight: 400;
+                        transition: 0.4s;
+    
+                        &:hover{
+                            color: #59815b;
+                        }
+    
+                        i{
+                            padding-right: 10px;
+                        }
+                    } 
+    
+                    .second-tag{
+                        text-decoration: none;
+                        background-color: #d7e9d8;
+                        top: 5%;
+                        right: 0 !important;
+                        position: absolute;;
+                        padding: 5px 30px 5px 20px;
+                        color: #878787;
+                        z-index: 50;
+                        font-family: "Crimson Text",serif;
+                        font-style: italic;
+                        font-size: 18px;
+                        font-weight: 400;
+                        transition: 0.4s;
+    
+                        &:hover{
+                            color: #59815b;
+                        }
+    
+                        i{
+                            padding-right: 10px;
+                        }
+                    }
+    
+                    img{
+                        width: 100%;
+                        height: auto;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+    
+                .text{
+                    background-color:none;
+                    
+                    padding-top: 20%;
+
+                    @media (max-width: 901px) {
+                        padding: 2em;
+                    }
+    
+                    span{
+                        font-style: italic;
+                        font-family: serif;
+                        transition: 0.4s;
+    
+                        &:hover{
+                            color: #59815b;
+                            border-bottom: 1px solid #444;
+                            transition: 0.5s;
+                        }
+    
+                        i{
+                            padding-right: 10px;
+                        }
+                    }
+    
+                    @include h3;
+                    @include p-text; 
+                }
+            }            
+        }
+    }
+}

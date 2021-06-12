@@ -1,0 +1,176 @@
+.header{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    .header-content{
+        width: 100%;
+        display: block;
+
+        .contact-info{
+            width: 100%;
+            display: flex;
+            background-color: transparent;
+            justify-content: space-between;
+            height: auto;
+            border-bottom:1px solid  #e1e1e1;
+
+            @media (max-width:486px) {
+                display: block;
+            }
+            
+            .phone-num{
+                display: flex;
+                padding:5px;
+
+                span{
+                    padding-right: 10px;
+                    font-style: italic;
+                    font-weight: initial;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 15px;
+
+                    &:hover{ 
+                        color: darkolivegreen;
+                    }
+
+                    i{
+                        padding-right: 10px;
+                        font-size: 12px;
+                        color: #fff;
+                    }
+                }
+            }
+
+            @include social-icons;
+        }
+
+        nav{
+            width: 100%;
+            display: flex;
+            background-color: transparent;
+            height: 100px;
+            justify-content: space-around; 
+            border-bottom: 1px solid #e1e1e1;
+            position: relative;
+
+            .center{
+                display: flex;
+                width: 100%;
+
+                ul{
+                    display: flex;
+                    padding-top: 2.5em;
+                    justify-content: space-between;
+
+                    @media (max-width:869px) {
+                        display: none;
+                    }
+    
+                    li{
+                        list-style: none; 
+                        cursor: pointer;
+    
+                        a{
+                            color: #fff;
+                            text-decoration: none;
+                            vertical-align: top;
+                            padding: 0 29px;
+                            font-family: Oswald,sans-serif;
+                            font-style: normal;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 28px;
+                            text-transform: uppercase;
+                            transition: 0.5s;
+    
+                            &:hover{
+                                color: darkolivegreen;
+                            }
+                        }
+                    }
+                }
+
+                .logo{
+                    
+                    max-height: 110px;
+                    display: inline;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+    
+                    img{
+                        width: 120px;
+                        height: 76px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+
+            .destination{
+                width: 100%;
+                padding-top: 2.5em;
+
+                span{
+                    color:#fff;
+                    font-weight: bold;
+                    transition: 0.5s;
+                    cursor: pointer;
+
+                    &:hover{ 
+                        color: darkolivegreen;
+                    }
+                }
+
+                @media (max-width:1049px) {
+                    display: none;
+                }
+
+                i{
+                    padding-right: 10px;
+                }
+            }
+
+            .search-bar{
+                width: 100%;
+                display: flex;
+                position: relative;
+                padding-top: 1.6em;
+                justify-content: flex-end;
+
+                @media (max-width:1200px) {
+                    display: none;
+                }
+
+                input{
+                    width: 150px;
+                    padding-right: 50px;
+                    background-color: transparent;
+                    color: #fff; 
+                    outline: none;
+                    border: none;
+
+                    &::placeholder{
+                        color: #fff;
+                        font-size: 20px;
+                        line-height: 20px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+
+                    &:focus{
+                        color: #fff;
+                    } 
+                }
+                i{
+                    color:#fff;
+                    font-size: 0.8em;
+                    position: absolute;
+                    top: 3.5em;
+                    right: 1em;
+                }
+            }
+        }
+    }
+}
